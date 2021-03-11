@@ -1,24 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import background from './images/flower.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import './css/styles.css'
+
+const contactData = [
+  {
+    link: 'https://github.com/BrianMLi',
+    label: 'github-icon',
+    icon: faGithubSquare,
+  },
+  {
+    link: 'https://www.linkedin.com/in/brianmarcoli/',
+    label: 'linkedin-icon',
+    icon: faLinkedin,
+  },
+  {
+    link: 'mailto:bli23_lj@hotmail.com',
+    label: 'email-icon',
+    icon: faEnvelope,
+  },
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      backgroundImage: `url(${background})`,
+      minHeight: '100vh',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'
+    }}>
+      <div className="icon-social" >
+        {contactData.map((data) => (
+          <a href={data.link} target="_blank" style={{ color: '#FAFAFA' }}>
+            <FontAwesomeIcon className={data.label} icon={data.icon} size='3x' style={{ padding: '8px' }} />
+          </a>
+        ))}
+      </div>
     </div>
   );
 }

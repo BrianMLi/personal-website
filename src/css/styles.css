@@ -1,0 +1,15 @@
+.github-icon:hover {
+    color: rgb(57, 127, 207);
+}
+.linkedin-icon:hover {
+    color: rgb(57, 127, 207);
+}
+.email-icon:hover {
+    color: rgb(57, 127, 207);
+}
+.icon-social {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+}
