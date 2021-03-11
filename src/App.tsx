@@ -34,7 +34,7 @@ function App() {
     }}>
       <div className="icon-social" >
         {contactData.map((data) => (
-          <a href={data.link} target="_blank" style={{ color: '#FAFAFA' }}>
+          <a href={data.link} target="_blank" rel="noreferrer" style={{ color: '#FAFAFA' }}>
             <FontAwesomeIcon className={data.label} icon={data.icon} size='3x' style={{ padding: '8px' }} />
           </a>
         ))}
