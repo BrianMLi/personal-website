@@ -10,6 +10,47 @@
 .icon-social {
   position: absolute;
   left: 50%;
-  bottom: 15%;
+  bottom: 25%;
   transform: translateX(-50%);
+}
+.profile {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+}
+.profile-image {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+.headline {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    line-height: 1.65;
+    text-transform: uppercase;
+    color: #3c3b3b;
+    padding-top: 1.25rem;
+}
+.backdrop {
+    padding: 3em 3em 1em;
+    background: #fff;
+    border: 1px solid hsla(0, 0%, 62.7%, .3);
+    margin: 0 0 3em;
+    position: relative;
+    display: block;
+    width: 40%;
+    height: 60%;
 }
