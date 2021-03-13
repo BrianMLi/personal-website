@@ -1,6 +1,5 @@
 import React from 'react';
-import background from './images/flower.png';
-import Socials from './components/socials';
+import background from './images/background.png';
 import Profile from './components/profile';
 import './css/styles.css'
 
@@ -13,10 +12,7 @@ function App() {
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'
     }}>
-      <div>
-        <Profile />
-        <Socials />
-      </div>
+      <Profile />
     </div>
   );
 }
