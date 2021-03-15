@@ -8,7 +8,7 @@ const Profile = () => (
     <div className='profile'>
         <section>
             <div className='profile-image'>
-                <img src={image} />
+                <img alt="" src={image} />
             </div>
         </section>
         <section>

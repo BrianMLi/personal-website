@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import '../css/styles.css'
 
 const contactData = [
@@ -18,7 +18,7 @@ const contactData = [
     {
         link: 'mailto:bli23_lj@hotmail.com',
         label: 'email-icon',
-        icon: faEnvelope,
+        icon: faEnvelopeSquare,
     },
 ]
 

@@ -7,24 +7,28 @@
 .email-icon:hover {
     color: rgb(57, 127, 207);
 }
-.icon-social {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 11.35rem;
-  height: 3.5rem;
+
+.background {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/background.png");
+    justify-content: center;
+    text-align: left;
+    overflow: hidden;
 }
 .profile {
     font-family: "Raleway", Helvetica, sans-serif;
     position: absolute;
-    left: 50%;
     top: 20%;
+    left: 50%;
     transform: translateX(-50%);
     letter-spacing: 0.25em;
     line-height: 1.65;
     color: #3c3b3b;
-    width: 35.5rem; 
-    height: 80vh;
 }
 .profile-image {
     border-radius: 50%;
@@ -32,45 +36,35 @@
     height: 125px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
 img {
-    display: inline;
-    margin: 0 auto;
     height: 100%;
-    width: auto;
 }
 .headline {
     font-size: 1.5em;
     font-weight: 900;
-    padding-top: 1.25rem;
-    position: absolute;
-    left: 50%;
+    padding-top: 1rem;
     text-transform: uppercase;
-    transform: translateX(-50%);
-    height: 3rem;
 }
 .about {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 6rem;
-    height: 27rem;
+    padding-top: 1rem;
+    width: 17.8rem;
 } 
 .about h2 {
     text-transform: uppercase;
     font-size:0.8em;
-    margin: 0 0 1.5em;
     font-weight: 800;
 }
 .about p {
     font-size: 0.9em;
     letter-spacing: 0;
-    margin: 0 0 2em;
-    padding: 0;
-    border: 0;
     font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
     color: #3c3b3b;
+}
+.icon-social {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 11.35rem;
 }
