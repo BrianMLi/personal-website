@@ -1,11 +1,23 @@
+.github-icon {
+    color: #FAFAFA;
+    padding: 8px
+}
+.linkedin-icon {
+    color: #FAFAFA;
+    padding: 8px
+}
+.email-icon {
+    color: #FAFAFA;
+    padding: 8px
+}
 .github-icon:hover {
-    color: rgb(57, 127, 207);
+    color:#397fcf
 }
 .linkedin-icon:hover {
-    color: rgb(57, 127, 207);
+    color:#397fcf
 }
 .email-icon:hover {
-    color: rgb(57, 127, 207);
+    color:#397fcf
 }
 
 .background {
