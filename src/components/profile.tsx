@@ -4,7 +4,6 @@ import Socials from './socials';
 import '../css/styles.css'
 
 const Profile = () => (
-
     <div className='profile'>
         <section>
             <div className='profile-image'>

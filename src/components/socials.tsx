@@ -25,7 +25,7 @@ const contactData = [
 const Socials = () => (
     <div className="icon-social" >
         {contactData.map((data) => (
-            <a href={data.link} target="_blank" rel="noreferrer" style={{ color: '#FAFAFA' }}>
+            <a key={data.label} href={data.link} target="_blank" rel="noreferrer" style={{ color: '#FAFAFA' }}>
                 <FontAwesomeIcon className={data.label} icon={data.icon} size='3x' style={{ padding: '8px' }} />
             </a>
         ))}
