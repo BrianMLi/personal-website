@@ -10,9 +10,15 @@ test('renders name', () => {
 
 test('renders about', () => {
   render(<App />);
-  const linkElement = screen.getByText(/About Me/i);
+  const linkElement = screen.getByRole('heading', {name: /About Me/i});
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders paragraph', () => {
+  render(<App />);
+  const linkElement = screen.getByText( /I graduated from the Sauder School/i);
+  expect(linkElement).toBeInTheDocument();
+})
 
 test('renders links', () => {
   render(<App />);
